@@ -133,25 +133,7 @@ address {
 .nav-menu .link.active-link{
     color: var(--accent-text-color);
 }
-.header .email-link::before {
-    width: 16px;
-    height: 12px;
-    background-image: url(../images/icons/email-icon.svg);
-}
 
-.header .email-link:hover::before {
-    background-image: url(../images/icons/email-hover-icon.svg);
-}
-
-.header .phone-link::before {
-    width: 10px;
-    height: 16px;
-    background-image: url(../images/icons/phone-icon.svg);
-}
-
-.phone-link:hover::before {
-    background-image: url(../images/icons/phone-hover-icon.svg);
-}
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -172,6 +154,16 @@ address {
 
 .contact-links-list>li:not(:last-child) {
     margin-right: 30px;
+}
+
+.email-link .email-link-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.phone-link .phone-link-icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 .header .contact-link:hover,
@@ -336,8 +328,34 @@ address {
 
 .team-member .member-description {
     font-weight: 400;
+    margin-bottom: 16px;
+}
+.members-socialLink-list {
+    display: flex;
+    justify-content: center;
+    margin: -5px;
 }
 
+.members-socialLink-list .member-socialLink-item {
+    margin: 5px;
+}
+
+.member-socialLink-item .member-socialLink {
+    display: inline-flex;
+    border-radius: 50%;
+}
+
+.member-socialLink-item .member-socialLink:hover {
+    background-color: var(--selected-button-background);
+    fill: #FFFFFF;
+}
+
+.member-socialLink-item .member-socialLink:hover .member-socialLink-icon {
+    fill: #FFFFFF;
+}
+.member-socialLink-icon {
+    fill: #AFB1B8;
+}
 /* Regular customers styles */
 .customers-section .customers-list {
     justify-content:center;
