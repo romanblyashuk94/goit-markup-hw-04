@@ -338,6 +338,28 @@ address {
     font-weight: 400;
 }
 
+/* Regular customers styles */
+.customers-section .customers-list {
+    justify-content:center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.customers-list .customer-item {
+    margin: 15px;
+}
+.customers-list .customer-link-icon {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+}
+
+.customers-list .customer-link-icon:hover {
+    fill: var(--selected-button-background);
+    border-color: var(--selected-button-background);
+}
+
+
 /* footer styles */
 .footer {
     padding: 60px 0;
