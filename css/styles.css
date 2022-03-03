@@ -219,18 +219,17 @@ address {
 }
 
 /* Featers styles */
-.page-section.featers-section {
-    padding-top: 54px;
-}
+
 .featers-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: -15px
 }
 
 .featers-list .feater-item {
     max-width: 270px;
-    margin:40px 30px 0 0;
+    margin: 15px;
 }
 
 .featers-list .feater-item::before {
@@ -257,10 +256,6 @@ address {
     background-image: url(../images/featersIcons/astronaut.svg);
 }
 
-.featers-list .feater-item:nth-child(4n) {
-    margin-right: 0;
-}
-
 .feater-item  .feater-title {
     margin-bottom: 10px;
     font-weight: 700;
@@ -279,27 +274,28 @@ address {
 .whatWeDoing-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    margin: -15px;
 }
 
 .whatWeDoing-list li {
-    margin-top: 20px;
+    margin: 15px;
 }
 
 /* Our team section styles */
 .team-section {
     background: #F5F4FA;
 }
-.section-title.team-section-title {
-    margin-bottom: 30px;
-}
+
 .team-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
 }
 
 .team-list .team-member {
-    margin: 20px 30px 0 0;
+    margin: 15px;
     padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -474,7 +470,7 @@ address {
 .filters-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .filters-list .filter-item:not(:last-child) {
     margin-right: 8px;
@@ -503,11 +499,13 @@ address {
 
 .projects-list {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;    
 }
 
 .project-item {
-    margin: 30px 30px 0 0;
+    margin: 15px;
     max-width: calc((100% - 60px)/3);
     border: 1px solid #EEEEEE;
     overflow: hidden;
